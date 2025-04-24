@@ -1,13 +1,13 @@
 import Header_Home from '../components/Header_Home'
 import Footer from '../components/Footer'
-import Carousel_Home from '../components/Carousel_Home';
+import ImageTrack from '../components/ImageTrack';
 
 function Home()
 {
     return(
     <>
     <Header_Home/>
-    <Carousel_Home/>
+    <ImageTrack/>
     <Footer/>
     </> 
     );

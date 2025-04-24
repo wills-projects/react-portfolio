@@ -79,7 +79,7 @@ nav li {
 
 .typewriter {
   color:#333;
-  font-size: 5em;
+  font-size: 5vw;
   border-right: 5px solid;
 
   margin-top: 0vw;
@@ -129,7 +129,7 @@ nav li {
   background-clip: text;
   color: transparent;
   background-size: 200%;
-  animation: animate 6s ease infinite;
+  animation: animate 4s ease infinite;
 }
 
 /* text enlarge when hovered on */
@@ -171,43 +171,47 @@ nav ul li a:focus {
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
-/* Styling the home page */
+/* Styling the image track */
 /*---------------------------------------------------------------------------------------------------------*/
 
-.main_section {
+#image-track .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-track {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 4vmin;
+  transform: translate(0%);
 }
 
-.main_section_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2vw;
-
-  list-style: none;
-  padding-left: 0;
-  position: relative;
+/* StackOverflow get rid of image selection (blue highlight) */
+/* https://stackoverflow.com/questions/16432909/remove-blue-highlight-over-html-image-when-clicked */
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
 }
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+}    
+input[type="text"], textarea, [contenteditable]
+{
 
-.main_section_list img {
-  width: 100%;
-}
-
-.main_section_list h2 {
-  position: absolute;
-  color: #FAF9F6;
-  font-size: 5vw;
-
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-
-  /* translating text */
-  transform: translate(10%, -200%);
-}
-
-#projects {
-  transform: translate(15%, -200%);
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
