@@ -31,6 +31,7 @@ function Leadership()
             ><img
               src="./src/assets/piano setup.jpg"
               alt="Picture of a red digital keyboard next to a lamp"
+              id="piano"
           /></a>
         </li>
         <li>
@@ -38,6 +39,7 @@ function Leadership()
             ><img
               src="./src/assets/valorant desktop icon.webp"
               alt="The VALORANT logo in a super cool colorway!"
+              id="valorant"
           /></a>
           <div class="text">
             <a href="https://discord.gg/KS2rZrHX5E">VALORANT Club at Pitt</a>

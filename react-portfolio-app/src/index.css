@@ -22,12 +22,6 @@ body {
   max-width: 50em;  
 }
 
-/* keep images from overflowing the viewport */
-img {
-  max-height: 100vh;
-  max-width: 100vw;
-}
-
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* This is where my CSS styling starts! */
@@ -46,12 +40,6 @@ img {
   justify-content: center;
   width: 22%;
   clip-path: circle();
-}
-
-#welcome {
-  margin-top: 0vw;
-  margin-bottom: 1.5vw;
-  font-size: 5vw;
 }
 
 nav {
@@ -82,6 +70,89 @@ nav li {
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
+/* Styling the header interactivity! */
+/*---------------------------------------------------------------------------------------------------------*/
+
+#container {
+  display: inline-block;
+}
+
+.typewriter {
+  color:#333;
+  font-size: 5em;
+  border-right: 5px solid;
+
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+
+  /* animation steps */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 2s,
+    cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking when typing animation proceeds */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+/* transparent text */
+.typewriter span {
+  background-image: 
+    linear-gradient(
+      to right,
+      #5C6E3D,
+      #A3B18A,
+      #8D9F6C,
+      #5C6E3D,
+      #A3B18A,
+      #8D9F6C,
+      #5C6E3D,
+      #A3B18A,
+      #8D9F6C,
+      #5C6E3D
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: animate 6s ease infinite;
+}
+
+/* text enlarge when hovered on */
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  font-size: 1.2em; 
+}
+
+/* animated portfolio effect */
+@keyframes animate {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 200%;
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
 /* Styling the nav bar interactivity */
 /*---------------------------------------------------------------------------------------------------------*/
 
@@ -91,6 +162,7 @@ nav li {
 }
 
 nav ul li a:hover {
+  transition: all .2s ease-in-out; 
   background-color: #A3B18A; 
 }
 
@@ -225,6 +297,34 @@ nav ul li a:focus {
   width: 20vw;
 }
 
+/* animating images when hovered */
+#kitlab {
+  transition: all .2s ease-in-out; 
+}
+
+#kitlab:hover {
+  transform: scale(1.1);
+  filter:saturate(1.25);
+}
+
+#tartanlogo {
+  transition: all .2s ease-in-out; 
+}
+
+#tartanlogo:hover {
+  transform: scale(1.1);
+  filter:saturate(1.25);
+}
+
+#howmet {
+  transition: all .2s ease-in-out; 
+}
+
+#howmet:hover {
+  transform: scale(1.1);
+  filter:saturate(1.25);
+}
+
 .experiences_list a {
   color: #333;
   text-decoration: underline;
@@ -239,6 +339,7 @@ nav ul li a:focus {
 }
 
 .experiences_list a:hover {
+  transition: all .2s ease-in-out; 
   color: #A3B18A; 
 }
 
@@ -300,6 +401,27 @@ nav ul li a:focus {
   width: 20vw;
 }
 
+/* animating images when hovered */
+#piano {
+  clip-path: circle();
+  transition: all .2s ease-in-out; 
+}
+
+#piano:hover {
+  transform: scale(1.07) rotate(4deg);
+  filter:saturate(1.25);
+}
+
+#valorant {
+  clip-path: circle();
+  transition: all .2s ease-in-out; 
+}
+
+#valorant:hover {
+  transform: scale(1.07) rotate(4deg);
+  filter:saturate(1.25);
+}
+
 .leadership_list a {
   color: #333;
   text-decoration: underline;
@@ -314,6 +436,7 @@ nav ul li a:focus {
 }
 
 .leadership_list a:hover {
+  transition: all .2s ease-in-out; 
   color: #A3B18A; 
 }
 
@@ -352,6 +475,7 @@ nav ul li a:focus {
 }
 
 #discord:hover {
+  transition: all .2s ease-in-out; 
   color: #A3B18A; 
 }
 
@@ -392,6 +516,7 @@ nav ul li a:focus {
 }
 
 #about_section a:hover {
+  transition: all .2s ease-in-out; 
   color: #A3B18A; 
 }
 
@@ -436,6 +561,7 @@ nav ul li a:focus {
 }
 
 .footing a:hover {
+  transition: all .2s ease-in-out; 
   color: #A3B18A; 
 }
 

@@ -9,7 +9,9 @@ function Header_Home()
         alt="A headshot of William Lee"
         id="portrait"
       />
-      <h1 id="welcome">Welcome to My Portfolio!</h1>
+      <div id="container"> 
+        <h1 class="typewriter">Welcome to my <span class="grow">Portfolio</span>!</h1>
+      </div>
 
       {/* Horizontal Navigation Bar */}
       <nav>
